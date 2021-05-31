@@ -65,8 +65,11 @@ namespace ASPMVCApp.Controllers
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
-            return View(obj);
+            else
+            {
+                return View(obj);
+            }
+            
         }
         public IActionResult Delete(int? Id)
         {
