@@ -1,0 +1,13 @@
+﻿@model ASPMVCApp.Models.Category
+
+
+<form method="post" asp-action="Create">
+    <h2>Add Category</h2>
+    <div asp-validation-summary="ModelOnly"></div>
+    <label asp-for="Name"></label><input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <label asp-for="DisplayOrder"></label><input asp-for="DisplayOrder" />
+    <span asp-validation-for="DisplayOrder"></span>
+    <input type="submit" value="Create" />
+</form>
+
